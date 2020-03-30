@@ -1,0 +1,46 @@
+.three-columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    //overflow sie pojawia!
+    
+    width: 100vw;
+
+    background-image: url('../../assets/3_columns_bg.png');
+
+    .stat {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 22%;
+        padding: 2rem 0 2rem 0;
+
+        h1 {
+            font-weight: 300;
+            font-size: 90px;
+            color: #5E5322;
+        }
+
+        h2 {
+            color: #3C3C3C;
+            font-size: 18px;
+            padding: 1rem;  
+        }
+
+        p {
+            color: #3C3C3C;
+            font-family: $font-alt;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .three-columns {
+        flex-direction: column;
+    }
+}

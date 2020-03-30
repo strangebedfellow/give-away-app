@@ -1,0 +1,87 @@
+.simple-steps-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+    }
+
+    h1 {
+        color: #3c3c3c;
+        font-size: 38px;
+        padding: 1rem;
+    }
+
+    .steps {
+        flex-direction: row;
+        justify-content: center;
+        height: 50%;
+        background-color: #f0f1f1;
+        width: 100%;
+        
+
+        .step {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 10%;
+            height: auto;
+            margin: 4rem;
+            color: #3C3C3C;
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            span {
+                font-size: 16px;
+            }
+
+            img {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    p {
+        font-family: $font-base;
+        font-weight: 300;
+    }
+
+    button {
+        color: #3c3c3c;
+        cursor: pointer;
+        background-color: white;
+        border: 0.75px solid #3c3c3c;
+        font-size: 36px;
+        text-transform: uppercase;
+        width: 310px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    .simple-steps-section {
+        h1 {
+            font-size: 1.7rem;
+        }
+        .steps {
+        flex-direction: column;
+        height: auto;
+
+        .step {
+            width: 100%;
+        }
+
+        }
+    }
+}

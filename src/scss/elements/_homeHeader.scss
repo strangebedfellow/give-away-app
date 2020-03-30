@@ -1,0 +1,108 @@
+.element {
+    height: 20px;
+    width: 1000px;
+    border: 1px solid red;
+}
+
+.home-header {
+    a {
+        cursor: pointer;
+    }
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .top-menu {
+        display: flex;
+        font-size: 13px;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 85vw;
+        height: 35vh;
+        margin-top: 2vh;
+       // font-weight: bold;
+
+        .login {
+            margin-top: 2vh;
+
+            a {
+                color: #737373;
+                text-decoration: none;
+            }
+
+            li {
+                display: inline-block;
+                padding: 0.8rem 1rem 0.8rem 1rem;
+                &:last-child {
+                    border: 0.75px solid #fad648;
+                }
+            }
+        }
+
+        .navigation {
+            color: #3c3c3c;
+            font-size: 18px;
+            margin-top: 2vh;
+            margin-right: -2rem;
+
+            li {
+                display: inline-block;
+                padding: 1rem 2rem 1rem 2rem;
+                &:first-child {
+                    border: 0.75px solid #3c3c3c;
+
+                }
+            }
+        }
+    }
+
+    .header-content {
+        color: #3c3c3c;
+        display: flex;
+        font-size: 13px;
+        align-self: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 50vw;
+
+        div {
+            text-align: center;
+            h1 {
+                font-size: 38px;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+
+            p {
+                font-family: $font-base;
+                font-weight: 300;
+            }
+
+            button {
+                color: #3c3c3c;
+                cursor: pointer;
+                background-color: white;
+                border: 0.75px solid #3c3c3c;
+                font-size: 36px;
+                text-transform: uppercase;
+                width: 310px;
+                height: 120px;
+                margin: 3rem 2rem 0 2rem;
+            }
+        }
+
+        img {
+            margin-top: 2vh;
+        }
+    }
+}
+
