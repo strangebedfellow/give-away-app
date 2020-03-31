@@ -1,4 +1,4 @@
-.simple-steps-section {
+.simple-steps {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,6 @@
         height: 50%;
         background-color: #f0f1f1;
         width: 100%;
-        
 
         .step {
             flex-direction: column;
@@ -35,19 +34,16 @@
             width: 10%;
             height: auto;
             margin: 4rem;
-            color: #3C3C3C;
+            color: #3c3c3c;
 
             p {
                 font-size: 18px;
                 font-weight: 400;
+                padding-top: 2rem;
             }
 
             span {
                 font-size: 16px;
-            }
-
-            img {
-                margin-bottom: 1rem;
             }
         }
     }
@@ -70,18 +66,17 @@
 }
 
 @media (max-width: 400px) {
-    .simple-steps-section {
+    .simple-steps {
         h1 {
             font-size: 1.7rem;
         }
         .steps {
-        flex-direction: column;
-        height: auto;
+            flex-direction: column;
+            height: 100%;
 
-        .step {
-            width: 100%;
-        }
-
+            .step {
+                width: 100%;
+            }
         }
     }
 }
