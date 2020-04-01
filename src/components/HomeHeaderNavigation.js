@@ -11,7 +11,7 @@ export default class HomeHeaderNavigation extends Component {
                     <li>Start</li>
                     <li><Link to="steps">O co chodzi?</Link></li>
                     <li><Link to="about">O nas</Link></li>
-                    <li><Link to="foundation">Fundacja i organizacje</Link></li>
+                    <li><Link to="help">Fundacja i organizacje</Link></li>
                     <li><Link to="contact">Kontakt</Link></li>
                 </ul>
             </div>
