@@ -3,7 +3,23 @@ import React, { Component } from "react";
 import decoration from '../assets/Decoration.svg';
 
 export default class WhoWeHelp extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            f: false,
+            o: false,
+            l: false
+        }
+    }
+
+    handleClick = (e) => {
+        this.setState({ [e.target.name]: true });
+    }
+
+
     render() {
+        const { f, o, l } = this.state;
+
         return <>
             <section className='who-we-help' id='help'>
                 <h1>Komu pomagamy?</h1>
@@ -11,9 +27,9 @@ export default class WhoWeHelp extends Component {
                     <img src={decoration} alt="decoration"></img>
                 </p>
                 <div className='help-buttons'>
-                    <button>Fundacjom</button>
-                    <button>Organizacjom pozarządowym</button>
-                    <button>Lokalnym zbiórkom</button>
+                    <button name='f' onClick={this.handleClick}>Fundacjom</button>
+                    <button name='o' onClick={this.handleClick}>Organizacjom pozarządowym</button>
+                    <button name='l' onClick={this.handleClick}>Lokalnym zbiórkom</button>
                 </div>
                 <div className='help-desc'>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
