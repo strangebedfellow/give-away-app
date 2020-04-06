@@ -9,10 +9,10 @@ export default class HomeHeaderNavigation extends Component {
             <div className='navigation'>
                 <ul>
                     <li>Start</li>
-                    <li><Link to="steps">O co chodzi?</Link></li>
-                    <li><Link to="about">O nas</Link></li>
-                    <li><Link to="help">Fundacja i organizacje</Link></li>
-                    <li><Link to="contact">Kontakt</Link></li>
+                    <li><Link to="steps" smooth={true} duration={200}>O co chodzi?</Link></li>
+                    <li><Link to="about" smooth={true} duration={200}>O nas</Link></li>
+                    <li><Link to="help" smooth={true} duration={200}>Fundacja i organizacje</Link></li>
+                    <li><Link to="contact" smooth={true} duration={200}>Kontakt</Link></li>
                 </ul>
             </div>
         </>

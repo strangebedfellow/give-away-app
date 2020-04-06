@@ -12,7 +12,7 @@ export default class HomeHeader extends Component {
         return <>
             <section className='home-header'>
                 <div className='top-menu'>
-                    <div className='login'>
+                    <div className='home-header-login'>
                         <ul>
                             <li><Link to='/login'>Zaloguj</Link></li>
                             <li><Link to='/register'>Załóż konto</Link></li>
