@@ -23,23 +23,22 @@
             color: #3c3c3c;
             cursor: pointer;
             background-color: white;
-            //border: 0.75px solid #3c3c3c;
-            border: 0;
+            border: 0.75px solid transparent;
             width: 25%;
             font-size: 24px;
             text-align: center;
             padding: 1rem;
+        }
 
-            &:last-child {
-                border: 0.75px solid #3c3c3c;
-            }
+        .btn-active {
+            border: 0.75px solid #3c3c3c;
         }
     }
 
     .help-desc {
         width: 35vw;
         text-align: center;
-        padding: 4rem 0 4rem 0 ;
+        padding: 4rem 0 4rem 0;
 
         span {
             line-height: 2rem;
@@ -86,6 +85,18 @@
                     font-size: 18px;
                 }
             }
+        }
+    }
+
+    .numbers {
+        display: flex;
+        padding: 2rem;
+
+        li {
+            cursor: pointer;
+            padding: 1rem;
+            margin: 0.5rem;
+            border: 0.75px solid #3c3c3c;
         }
     }
 }
