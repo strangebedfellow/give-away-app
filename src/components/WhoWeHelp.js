@@ -6,9 +6,11 @@ export default class WhoWeHelp extends Component {
     constructor() {
         super();
         this.state = {
-            organizations: false,
-            pagination: [],
-            active: false,
+            organizations: data[0],
+            pagination: data[0].listItems,
+            active: 0,
+            currentPage: 1,
+            itemsPerPage: 3
         }
     }
 
@@ -48,9 +50,9 @@ export default class WhoWeHelp extends Component {
                     <img src={decoration} alt="decoration"></img>
                 </p>
                 <div className='help-buttons'>
-                    <button name={0} className={active === '0' ? 'btn-active' : ''} onClick={this.handleClick}>Fundacjom</button>
-                    <button name={1} className={active === '1' ? 'btn-active' : ''} onClick={this.handleClick}>Organizacjom pozarządowym</button>
-                    <button name={2} className={active === '2' ? 'btn-active' : ''} onClick={this.handleClick}>Lokalnym zbiórkom</button>
+                    <button name={0} className={active === 0 ? 'btn-active' : ''} onClick={this.handleClick}>Fundacjom</button>
+                    <button name={1} className={active === 1 ? 'btn-active' : ''} onClick={this.handleClick}>Organizacjom pozarządowym</button>
+                    <button name={2} className={active === 2 ? 'btn-active' : ''} onClick={this.handleClick}>Lokalnym zbiórkom</button>
                 </div>
                 <div className='help-desc'>
                     {organizations.description}

@@ -44,6 +44,13 @@
   justify-content: center;
   height: 90vh;
 
+  .error-message {
+    color: red;
+    font-size: 10px;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
   .login-container {
     height: 60%;
     width: 30%;
