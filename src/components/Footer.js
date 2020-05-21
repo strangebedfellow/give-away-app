@@ -31,7 +31,6 @@ export default class Footer extends Component {
     handleSubmit = e => {
         e.preventDefault();
         const { message, name, email, errors } = this.state;
-
         message.length < 120 ? errors.message = 'Wiadomość musi mieć co najmniej 120 znaków' : errors.message = '';
         (/\s/g.test(name) || name.length < 1) ? errors.name = 'Podane imię jest nieprawidłowe!' : errors.name = '';
         !ValidateEmail(email) ? errors.email = 'Podany email jest nieprawidłowy!' : errors.email = '';
@@ -45,7 +44,6 @@ export default class Footer extends Component {
 
     render() {
         const { message, name, email, errors, valid } = this.state;
-
         return <>
             <section className='footer' id='contact'>
                 <div className='contact'>
